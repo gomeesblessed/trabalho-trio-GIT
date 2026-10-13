@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Notas</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="marca">NotaCerta</div>
+        <p>Calculadora escolar</p>
+    </header>
+
+    <main class="container">
+
+        <section class="apresentacao">
+            <div>
+                <p class="etiqueta">ÁREA DO ESTUDANTE</p>
+                <h1>Suas notas, sem complicação.</h1>
+                <p>Calcule sua média e confira sua situação escolar.</p>
+            </div>
+
+            <div class="icone">✓</div>
+        </section>
+
+        <section class="resumo">
+            <article class="resumo-card">
+                <span>Notas preenchidas</span>
+                <strong id="quantidade">0 de 4</strong>
+            </article>
+
+            <article class="resumo-card">
+                <span>Média</span>
+                <strong id="mediaResumo">--</strong>
+            </article>
+
+            <article class="resumo-card">
+                <span>Situação</span>
+                <strong id="situacaoResumo">--</strong>
+            </article>
+        </section>
+
+        <section class="conteudo">
+
+            <form id="formNotas" class="painel">
+                <h2>Dados do estudante</h2>
+
+                <p class="descricao">
+                    Preencha os campos abaixo.
+                    A média mínima para aprovação é 6,0.
+                </p>
+
+                <label for="nome">Nome do estudante</label>
+                <input type="text" id="nome"
+                    placeholder="Digite seu nome" required>
+
+                <label for="disciplina">Disciplina</label>
+                <input type="text" id="disciplina"
+                    placeholder="Ex.: Matemática" required>
+
+                <div class="notas-grid">
+                    <div>
+                        <label for="nota1">1ª nota</label>
+                        <input type="number" id="nota1"
+                            min="0" max="10" step="0.1" required>
+                    </div>
+
+                    <div>
+                        <label for="nota2">2ª nota</label>
+                        <input type="number" id="nota2"
+                            min="0" max="10" step="0.1" required>
+                    </div>
+
+                    <div>
+                        <label for="nota3">3ª nota</label>
+                        <input type="number" id="nota3"
+                            min="0" max="10" step="0.1" required>
+                    </div>
+
+                    <div>
+                        <label for="nota4">4ª nota</label>
+                        <input type="number" id="nota4"
+                            min="0" max="10" step="0.1" required>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button type="submit" class="btn-principal">
+                        Calcular média
+                    </button>
+
+                    <button type="reset" class="btn-secundario">
+                        Limpar campos
+                    </button>
+                </div>
+
+                <p id="mensagem" class="mensagem"></p>
+            </form>
+
+            <section class="painel resultado">
+                <h2>Boletim</h2>
+
+                <p class="descricao">
+                    O resultado do cálculo aparecerá aqui.
+                </p>
+
+                <div id="boletim" class="boletim-vazio">
+                    Preencha as informações e clique em
+                    "Calcular média".
+                </div>
+
+                <h3>Últimos cálculos</h3>
+
+                <ul id="historico" class="historico">
+                    <li class="sem-historico">
+                        Ainda não há cálculos.
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <footer>
+            NotaCerta - Projeto de HTML, CSS e JavaScript
+        </footer>
+
+    </main>
+
+   
+    <script src="/JS/script.js"></script>
+</body>
+</html>
+
