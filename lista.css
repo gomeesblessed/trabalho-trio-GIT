@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eeeeee;
+  color: #222;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.cabecalho { margin-bottom: 20px; }
+.cabecalho h1 { font-size: 28px; }
+.eyebrow, .decoracao { display: none; }
+
+.painel, .resumo > div {
+  background: white;
+  border: 1px solid #aaa;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+h2 { font-size: 20px; }
+label { display: block; margin-bottom: 12px; }
+input, select, textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #888;
+  font-family: Arial, sans-serif;
+}
+
+.campos, .linha-form { display: block; }
+button {
+  background: #ddd;
+  border: 1px solid #777;
+  color: #111;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+button:hover { background: #ccc; }
+
+.resumo { display: flex; gap: 10px; }
+.resumo > div { flex: 1; }
+.resumo strong { display: block; font-size: 24px; }
+.resumo span { font-size: 13px; }
+
+.topo-historico { margin-bottom: 15px; }
+.filtros select { max-width: 200px; }
+.lista { padding: 0; list-style: none; }
+.atividade {
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+}
+.atividade h3 { margin: 0 0 8px; }
+.atividade p { overflow-wrap: anywhere; }
+.atividade small { color: #555; }
+.etiqueta { font-size: 12px; background: #ddd; padding: 3px; }
+.feito h3 { text-decoration: line-through; }
+.acoes { display: flex; gap: 5px; margin-top: 10px; }
+.vazio, footer { text-align: center; color: #555; }
+
+@media (max-width: 500px) {
+  .resumo { display: block; }
+  .container { margin: 5px auto; }
+}
+
+
+body, body * { font-weight: normal !important; }
