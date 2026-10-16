@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: blue;
+    display: flex;
+    
+}
+header h1{
+    color: white;
+    margin-left: 450px
+}
+header p{
+    color: white;
+    margin-left: 420px;
+    margin-top: 10px;
+    font-size: large;
+}
+.titulo h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: x-large;
+}
+.projetos{
+    display: flex;
+    gap: 20px;
+}
+.projetos a{
+    gap: 20px;
+}

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 222, 222);
+    font-family: Arial, sans-serif;
+}
+
+.topo {
+    background-color: rgb(0, 0, 77);
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo p {
+    font-size: 20px;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+}
+
+.topo a:hover {
+    color: green;
+}
+
+.fundo {
+    background-color: rgb(7, 24, 122);
+    margin: 35px 50px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 5px gray;
+}
+
+.subtopo p {
+    color: lightgray;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.subtopo h1 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.subtopo h4 {
+    color: lightgray;
+}
+
+.main {
+    margin: 22px 50px;
+}
+
+.metrics {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.metric {
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px gray;
+    width: 33.33%;
+}
+
+.metric span {
+    display: block;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.metric strong {
+    font-size: 24px;
+}
+
+.quiz {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px gray;
+}
+
+.quiz h2 {
+    margin-bottom: 15px;
+}
+
+#pergunta {
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+#alternativas button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: left;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+#mensagem {
+    margin: 12px 0;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(142, 145, 161);
+    color: blue;
+}
+
+fundo {
+    margin: 20px 12px;
+    padding: 25px 20px;
+}
+
+.main {
+    margin: 20px 12px;
+}
+
+.metrics {
+    flex-direction: column;
+}
+
+.metric {
+    width: 100%;
+}
+
+.topo p {
+    font-size: 16px;
+}
