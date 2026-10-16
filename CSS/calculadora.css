@@ -18,7 +18,12 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.topo a{
+    color: white;
+}
+.topo a:hover{
+    font-size: large;
+}
 .marca {
     font-size: 23px;
     font-weight: bold;

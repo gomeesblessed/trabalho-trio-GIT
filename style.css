@@ -43,11 +43,82 @@ header p{
 }
 
 .projetos a:hover {
-    background-color: darkblue;
+    background-color: green;
+    font-size: large;
 }
+.sub{
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+    background-color: rgb(231, 228, 228);
+}
+.colab1{
+    display: flex;
+}
+.colab1 img{
+    height: 300px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.colab1 p{
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 700px;
+}
+.colab2{
+    display: flex;
+}
+.colab2 img{
+    height: 300px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.colab2 p{
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 700px;
+}
+.colab3{
+    display: flex;
+}
+.colab3 img{
+    height: 300px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.colab3 p{
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 700px;
+}
+.colab4{
+    display: flex;
+}
+.colab4 img{
+    height: 300px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.colab4 p{
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 700px;
+}
+
+
+
+
+
+
+
+
 footer{
     background-color: blue;
-    margin-top: 700px;
+    margin-top: 200px;
 }
 footer p{
     text-align: center;

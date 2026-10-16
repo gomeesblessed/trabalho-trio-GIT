@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de atividades e afazeres</title>
+  <link rel="stylesheet" href="/CSS/lista.css">
+  <script src="/JS/lista.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Projeto Front-end</h1>
+        <p>HTML + CSS + JS</p>
+        <a href="/index.html">Voltar Ao Inicio</a>
+    </header>
+  
+    <main class="container">
+    <header class="cabecalho">
+      <div>
+        <p class="eyebrow">ORGANIZAÇÃO PESSOAL</p>
+        <h1>Meu histórico de atividades</h1>
+        <p>Registre o que você fez e acompanhe seu progresso ao longo do tempo.</p>
+      </div><span class="decoracao" aria-hidden="true">✓</span>
+    </header>
+    <section class="painel" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Registrar atividade</h2>
+      <form id="form-atividade">
+        <div class="campos"><label>Atividade<input id="titulo" maxlength="90" required
+              placeholder="Ex.: Estudei JavaScript"></label><label>Categoria<select id="categoria">
+              <option>Estudos</option>
+              <option>Trabalho</option>
+              <option>Pessoal</option>
+              <option>Saúde</option>
+              <option>Outros</option>
+            </select></label></div>
+        <label>Descrição (opcional)<textarea id="descricao" maxlength="250" rows="2"
+            placeholder="O que você realizou?"></textarea></label>
+        <div class="linha-form"><label>Data da atividade<input type="date" id="data" required></label><button
+            type="submit">+ Registrar atividade</button></div>
+      </form>
+    </section>
+    <section class="resumo" aria-label="Resumo">
+      <div><strong id="total">0</strong><span>Registradas</span></div>
+      <div><strong id="concluidas">0</strong><span>Concluídas</span></div>
+      <div><strong id="pendentes">0</strong><span>Pendentes</span></div>
+    </section>
+    <section class="painel historico" aria-labelledby="titulo-historico">
+      <div class="topo-historico">
+        <div>
+          <h2 id="titulo-historico">Histórico</h2>
+          <p>Suas atividades mais recentes aparecem primeiro.</p>
+        </div>
+        <div class="filtros"><label for="filtro">Mostrar</label><select id="filtro">
+            <option value="todas">Todas</option>
+            <option value="pendentes">Pendentes</option>
+            <option value="concluidas">Concluídas</option>
+          </select></div>
+      </div>
+      <ul id="lista" class="lista" aria-live="polite"></ul>
+      <p id="vazio" class="vazio" hidden>Nenhuma atividade encontrada. Que tal registrar a primeira?</p>
+    </section>
+  </main>
+
+</body>
+
+</html>
