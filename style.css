@@ -1,31 +1,36 @@
-*{
-    margin: 0px;
-    padding: 0px;
+
+* {
+    margin: 0;
+    padding: 0;
 }
-header{
+
+header {
     background-color: blue;
-    display: flex;
-    
-}
-header h1{
     color: white;
-    margin-left: 450px
-}
-header p{
-    color: white;
-    margin-left: 420px;
-    margin-top: 10px;
-    font-size: large;
-}
-.titulo h1{
     text-align: center;
-    margin-top: 10px;
-    font-size: x-large;
+    padding: 20px;
 }
-.projetos{
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.projetos {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin-top: 30px;
 }
-.projetos a{
-    gap: 20px;
+
+.projetos a {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.projetos a:hover {
+    background-color: darkblue;
 }
